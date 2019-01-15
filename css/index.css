@@ -70,9 +70,12 @@ h1, h2, h3, h4, h5 {
 	box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 html, body {
 	/* font-family: 'Bai Jamjuree'; */
-	font-size: 17px;
 	color: black;
 }
 
@@ -81,16 +84,16 @@ body {
 }
 
 p {
-	line-height: 26px;
-	margin-bottom: 20px;
+	line-height: 1.53rem;
+	margin-bottom: 1.25rem;
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 5rem;
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 1.38rem;
 }
 
 ul {
@@ -99,12 +102,12 @@ ul {
 }
 
 figure {
-	padding-bottom: 40px;
+	padding-bottom: 2.5rem;
 }
 
 button {
 	-webkit-appearance: none;
-	font-size: 12px;
+	font-size: 0.75rem;
 	padding: 10px 40px;
 	cursor: pointer;
 	border-radius: 3px;
@@ -134,7 +137,7 @@ header {
 }
 
 .content-container, .header-content-container {
-	max-width: 1024px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -143,6 +146,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 nav {
@@ -168,7 +172,6 @@ nav a {
 }
 
 .hero-section {
-	height: 500px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -179,12 +182,10 @@ nav a {
 }
 
 .hero-section button {
-	/* background-color: #3f28ef; */
-	/* color: white; */
-	font-size: 16px;
+	font-size: 1rem;
 	margin: 0 auto;
-	margin-top: 20px;
-	max-width: 200px;
+	margin-top: 1.25rem;
+	max-width: 12.5rem;
 	border-radius: 0;
 	border: 1px solid black;
 }
@@ -268,7 +269,7 @@ nav a {
 }
 
 .ceo-name {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 
 .ceo-statement-text {
@@ -282,7 +283,7 @@ nav a {
 	margin: 40px 0;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 920px) {
   /* when screen width == content-container width */
   .content-container, .header-content-container  {
     max-width: calc(100% - 40px);
