@@ -77,6 +77,7 @@ html {
 html, body {
 	/* font-family: 'Bai Jamjuree'; */
 	color: black;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -84,16 +85,16 @@ body {
 }
 
 p {
-	line-height: 1.53rem;
-	margin-bottom: 1.25rem;
+	line-height: 1.2rem;
+	margin-bottom: 1.6rem;
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4.4rem;
 }
 
 h2 {
-	font-size: 1.38rem;
+	font-size: 1rem;
 }
 
 ul {
@@ -102,13 +103,13 @@ ul {
 }
 
 figure {
-	padding-bottom: 2.5rem;
+	padding-bottom: 2rem;
 }
 
 button {
 	-webkit-appearance: none;
 	font-size: 0.75rem;
-	padding: 10px 40px;
+	padding: 7px 40px;
 	cursor: pointer;
 	border-radius: 3px;
 	border: 1px solid black;
@@ -160,6 +161,7 @@ nav a {
 	text-decoration: none;
 	margin-right: 30px;
 	color: #BCBCBC;
+  font-weight: bold;
 }
 
 .logo {
@@ -175,10 +177,12 @@ nav a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  margin: 35px 0 75px 0;
 }
 
 .hero-section h1 {
 	text-align: center;
+  line-height: 4.5rem;
 }
 
 .hero-section button {
@@ -198,9 +202,9 @@ nav a {
 }
 
 .divider {
-	height: 1px;
+	height: 2px;
 	background-color: black;
-	margin-bottom: 40px;
+	margin-bottom: 2.2rem;
 }
 
 .text-grid-container {
@@ -209,8 +213,11 @@ nav a {
 }
 
 .text-grid-container section {
-	padding: 40px 0;
-	padding-top: 0;
+  padding-right: 1.8rem;
+}
+
+.text-grid-container section:last-child {
+  padding-right: 0;
 }
 
 .features-section {
@@ -288,10 +295,6 @@ nav a {
   .content-container, .header-content-container  {
     max-width: calc(100% - 40px);
   }
-
-  .text-grid-container section {
-    padding-right: 40px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -330,7 +333,7 @@ nav a {
 
 @media screen and (max-width: 500px) {
   header {
-    position: relative;
+    position: static;
     height: auto;
   }
  .header-content-container  {
@@ -346,13 +349,14 @@ nav a {
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid black;
+    font-size: 1.2rem;
   }
 
   .header-content-container .logo-href {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 25px 0;
+    padding: 20px 0;
     width: 100%;
     border-bottom: 1px solid black;
   }
