@@ -280,9 +280,11 @@ nav a {
 }
 
 .ceo-statement-text {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	padding: 30px;
 	width: 45%;
+	box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+	border-radius: 2px;
 }
 
 .copyright {
@@ -328,6 +330,19 @@ nav a {
 
 	.hero-section .main-title-container {
 		width: 100%;
+	}
+
+	.vision-text-container h1 {
+		font-size: 3.8rem;
+	}
+
+	.ceo-statement-section {
+		flex-direction: column-reverse;
+	}
+
+	.ceo-statement-text {
+		width: 100%;
+		margin-top: 2.5rem;
 	}
 }
 
